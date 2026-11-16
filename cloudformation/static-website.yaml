@@ -4,6 +4,11 @@ Resources:
   S3Bucket:
     Type: AWS::S3::Bucket
     Properties:
+
+      OwnershipControls:
+        Rules:
+          - ObjectOwnership: BucketOwnerEnforced
+          
       PublicAccessBlockConfiguration:
         BlockPublicAcls: true
         BlockPublicPolicy: false
