@@ -4,12 +4,12 @@ The goal of this project is to deploy a simple static website using Amazon S3 an
 The infrastructure is defined as code using a CloudFormation YAML template. The website itself is uploaded to an S3 bucket.
 
 ## 2. Technologies and Services Used
--Amazon S3
--AWS CloudFormation
--Git & GitHub
--VS Code
--YAML
--cfn-lint
+-Amazon S3 <br />
+-AWS CloudFormation <br />
+-Git & GitHub <br />
+-VS Code <br />
+-YAML <br />
+-cfn-lint <br />
 
 ## 3. Project Structure
 text
