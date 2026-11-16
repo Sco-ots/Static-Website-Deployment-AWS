@@ -94,3 +94,18 @@ The CloudFormation stack was deployed successfully.
 
 You can visit the website here:
 http://static-website-stack-s3bucket-c7dtr4rynfbg.s3-website-us-east-1.amazonaws.com
+
+
+## 5. Reflection
+ <br />
+
+* Why is **Amazon S3** suitable for static website hosting? <br />
+As per AWS description S3 is a simple way to host objects and static websites. Files can be uploaded in a straight forward way. Additionaly the burden and overhead of managing a traditional web server is taken care of by AWS. AWS S3 is cost efficient and scalabe.
+
+* What costs may occur? <br />
+Costs occur for storing the website files itself, as well as for the requests towards and data transfer from the website.
+
+* What happens when the CloudFormation stack is deleted? <br />
+
+The CloudFormation Stack itself will be deleted. The bucket policy is deleted along with the stack. 
+The S3 Bucket will persists due to 'deletionPolicy: Retain' in the CloudFormation template, same goes for the files uploaded to the S3 bucket, but public access may no longer work because the bucket policy has been removed.  
