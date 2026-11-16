@@ -12,19 +12,19 @@ The infrastructure is defined as code using a CloudFormation YAML template. The 
 -cfn-lint <br />
 
 ## 3. Project Structure
-text
-Static-Website-Deployment-AWS/
-│
-├── cloudformation/
-│   ├── static-website.yaml
-│   └── .gitkeep
-│
-├── website/
-│   ├── index.html
-│   ├── error.html
-│   └── .gitkeep
-│
-└── README.md
+
+Static-Website-Deployment-AWS/ <br />
+│ <br />
+├── cloudformation/ <br />
+│   ├── static-website.yaml <br />
+│   └── .gitkeep <br />
+│ <br />
+├── website/ <br />
+│   ├── index.html <br />
+│   ├── error.html <br />
+│   └── .gitkeep <br />
+│ <br />
+└── README.md <br />
 
 ## 4. Implementation
 
@@ -32,8 +32,8 @@ Static-Website-Deployment-AWS/
 
 A repository was created on GitHub to host all the files and provide version control during the implementation process.
 
-A clear and meaningful name was chosen for the repository, and an initial README was created.
-After that, a dev branch was created.
+A clear and meaningful name was chosen for the repository, and an initial README was created. <br />
+After that, a dev branch was created. <br />
 Additionally, the planned folder structure was created with the cloudformation and website folders.
 
 
@@ -63,14 +63,14 @@ Once the template was complete, it was validated using cfn-lint to check for pot
 The AWS Management Console was used to deploy the template. A new stack was created, and the YAML file was uploaded.
 After the deployment was finished, the stack events were checked to ensure that no errors occurred.
 
-Steps:
-
-1.Open AWS CloudFormation.
-2.Select Create Stack.
-3.Upload the static-website.yaml template.
-4.Enter the stack name static-website-stack.
-5.Review the configuration and create the stack.
-6.Check the stack events to verify successful deployment.
+Steps: <br />
+ <br />
+1.Open AWS CloudFormation. <br />
+2.Select Create Stack. <br />
+3.Upload the static-website.yaml template. <br />
+4.Enter the stack name static-website-stack. <br />
+5.Review the configuration and create the stack. <br />
+6.Check the stack events to verify successful deployment. <br />
 
 
 ### E. Uploading HTML Files to the S3 Bucket
